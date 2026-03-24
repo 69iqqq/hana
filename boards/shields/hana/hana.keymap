@@ -28,7 +28,7 @@
 &bt BT_CLR  &kp LGUI         &kp LALT      &kp LSHFT       &kp LCTRL         &kp APOS        &kp LEFT   &kp RCTRL          &kp RSHFT        &kp RALT       &kp RGUI       &trans
 &kp LSHFT   &kp PRINTSCREEN  &trans        &trans          &kp GRAVE         &studio_unlock  &trans     &trans             &trans           &trans         &trans         &trans
 
-                &studio_unlock  &kp TAB    &lt 1 ESCAPE   &lt 2 ENTER                               &kp SPACE  &kp BSPC   &kp DEL   &studio_unlock
+                &studio_unlock    &kp LGUI        &trans            &kp ENTER       &kp SPACE  &kp BACKSPACE      &kp DELETE   &studio_unlock
             >;
         };
 
@@ -40,7 +40,7 @@
 &kp LCTRL  &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp C_VOL_UP     &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &kp C_VOL_DN     &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
 
-                &studio_unlock  &kp TAB    &lt 1 ESCAPE   &lt 2 ENTER                               &kp SPACE  &kp BSPC   &kp DEL   &studio_unlock
+                &studio_unlock   &kp LGUI              &trans             &kp ENTER        &kp SPACE  &trans    &kp LALT   &studio_unlock
             >;
         };
 
