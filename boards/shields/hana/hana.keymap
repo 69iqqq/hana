@@ -16,7 +16,7 @@
 &kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G                      &kp H      &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
 &kp LSHFT  &kp Z           &kp X           &kp C             &kp V         &kp B &kp C_MUTE  &kp C_PP &kp N      &kp M        &kp COMMA          &kp DOT          &kp FSLH            &kp ESC
 
-                &kp TAB   &lt 1 ESCAPE   &lt 2 ENTER   &kp SPACE                  &kp BSPC   &kp LALT   &studio_unlock   &trans
+               &studio_unlock  &kp TAB    &lt 1 ESCAPE   &lt 2 ENTER                               &kp SPACE  &kp BSPC   &kp DEL   &studio_unlock
             >;
         };
 
@@ -28,7 +28,7 @@
 &bt BT_CLR  &kp LGUI         &kp LALT      &kp LSHFT       &kp LCTRL         &kp APOS        &kp LEFT   &kp RCTRL          &kp RSHFT        &kp RALT       &kp RGUI       &trans
 &kp LSHFT   &kp PRINTSCREEN  &trans        &trans          &kp GRAVE         &studio_unlock  &trans     &trans             &trans           &trans         &trans         &trans
 
-                &kp LGUI   &trans   &kp ENTER   &kp SPACE                  &kp BSPC   &kp DEL   &trans   &kp LALT
+                &studio_unlock  &kp TAB    &lt 1 ESCAPE   &lt 2 ENTER                               &kp SPACE  &kp BSPC   &kp DEL   &studio_unlock
             >;
         };
 
@@ -40,7 +40,7 @@
 &kp LCTRL  &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp C_VOL_UP     &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &kp C_VOL_DN     &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
 
-                &kp LGUI   &trans   &kp ENTER   &kp SPACE                  &trans   &kp LALT   &trans   &trans
+                &studio_unlock  &kp TAB    &lt 1 ESCAPE   &lt 2 ENTER                               &kp SPACE  &kp BSPC   &kp DEL   &studio_unlock
             >;
         };
 
