@@ -2,7 +2,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ {
+/*
+BASE LAYER
+╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    TAB           Q             W             E             R             T                               Y             U             I             O             P             BSPC
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    LCTRL         GUI(A)        ALT(S)        SHIFT(D)      CTRL(F)       G                               H             CTRL(J)       SHIFT(K)      ALT(L)        GUI(;)        '
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   knobs           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    LSHIFT        Z             X             C             V             B         MUTE / PLAY           N             M             ,             .             /             ESC
+╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                            UNLOCK        TAB           ESC(1)        ENTER(2)                           SPACE         BSPC          DEL           UNLOCK
+*/
+
+ / {
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,27 +32,51 @@
             >;
         };
 
+/*
+LOWER LAYER
+╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    TAB           1             2             3             4             5                               6             7             8             9             0             BSPC
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    BT_CLR        GUI           ALT           SHIFT         CTRL          '                               LEFT          CTRL          SHIFT         ALT           GUI           TRANS
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ knobs             ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    LSHIFT        PRTSCR        -             -             `             UNLOCK          L/R               -             -             -             -             -             -
+╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                            UNLOCK        GUI           TRANS         ENTER                             SPACE         BSPC          DEL           UNLOCK
+*/
+
         lower_layer {
             display-name = "lower";
 
             bindings = <
-&kp TAB     &kp N1           &kp N2        &kp N3          &kp N4            &kp N5          &kp N6     &kp N7             &kp N8           &kp N9         &kp N0         &kp BSPC
-&bt BT_CLR  &kp LGUI         &kp LALT      &kp LSHFT       &kp LCTRL         &kp APOS        &kp LEFT   &kp RCTRL          &kp RSHFT        &kp RALT       &kp RGUI       &trans
-&kp LSHFT   &kp PRINTSCREEN  &trans        &trans          &kp GRAVE         &studio_unlock  &trans     &trans             &trans           &trans         &trans         &trans
+&kp TAB     &kp N1           &kp N2        &kp N3          &kp N4            &kp N5                             &kp N6     &kp N7             &kp N8           &kp N9         &kp N0         &kp BSPC
+&bt BT_CLR  &kp LGUI         &kp LALT      &kp LSHFT       &kp LCTRL         &kp APOS                           &kp LEFT   &kp RCTRL          &kp RSHFT        &kp RALT       &kp RGUI       &trans
+&kp LSHFT   &kp PRINTSCREEN  &trans        &trans          &kp GRAVE         &studio_unlock&kp C_MUTE  &kp C_PP &trans     &trans             &trans           &trans         &trans         &trans
 
                 &studio_unlock    &kp LGUI        &trans            &kp ENTER       &kp SPACE  &kp BACKSPACE      &kp DELETE   &studio_unlock
             >;
         };
 
+/*
+RAISE LAYER
+╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    TAB           !             @             #             $             %                               ^             &             *             (             )             BSPC
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    LCTRL         -             =             [             ]             VOL+                            LEFT          DOWN          UP            RIGHT         \             `
+├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    LSHIFT        -             BR-           BR+           MUTE          VOL-                            _             +             {             }             |             ~
+╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                            UNLOCK        GUI           TRANS         ENTER                             SPACE         TRANS         ALT           UNLOCK
+*/
+
         raise_layer {
             display-name = "raise";
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT                &kp HASH              &kp DLLR           &kp PRCNT        &kp CARET  &kp AMPS  &kp ASTRK     &kp LPAR         &kp RPAR  &kp BSPC
-&kp LCTRL  &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp C_VOL_UP     &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &kp C_VOL_DN     &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
+&kp TAB    &kp EXCL   &kp AT                &kp HASH              &kp DLLR           &kp PRCNT                            &kp CARET  &kp AMPS  &kp ASTRK     &kp LPAR         &kp RPAR  &kp BSPC
+&kp LCTRL  &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp C_VOL_UP                         &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &kp C_VOL_DN  &kp C_MUTE  &kp C_PP   &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
 
-                &studio_unlock   &kp LGUI              &trans             &kp ENTER        &kp SPACE  &trans    &kp LALT   &studio_unlock
+                      &studio_unlock         &kp LGUI              &trans     &kp ENTER                                    &kp SPACE  &trans    &kp LALT   &studio_unlock
             >;
         };
 
