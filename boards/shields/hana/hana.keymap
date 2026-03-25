@@ -48,9 +48,9 @@ LOWER LAYER
             display-name = "lower";
 
             bindings = <
-&kp TAB     &kp N1           &kp N2        &kp N3           &kp N4      &kp N5                             &kp N6     &kp N7             &kp N8           &kp N9         &kp N0         &kp BSPC
-&bt BT_CLR  &kp TAB          &trans        &trans           &trans      &kp APOS                           &kp MINUS    &kp EQUAL         &kp LBRC      &kp RBRC       &kp RGUI       &trans
-&kp LSHFT   &kp PRINTSCREEN  &trans        &trans           &trans      &kp GRAVE    &kp C_MUTE  &kp C_PP  &trans        &trans             &kp LBRC      &kp RBRC        &trans         &trans
+&kp TAB     &kp N1           &kp N2        &kp N3           &kp N4      &kp N5                             &kp N6     &kp N7     &kp N8        &kp N9         &kp N0         &kp BSPC
+&bt BT_CLR  &kp TAB          &trans        &trans           &trans      &kp APOS                           &kp MINUS  &kp EQUAL  &kp LBRC      &kp RBRC       &kp RGUI       &trans
+&kp LSHFT   &kp PRINTSCREEN  &trans        &trans           &trans      &kp GRAVE    &kp C_MUTE  &kp C_PP  &trans     &trans     &kp LBRC      &kp RBRC       &trans         &trans
 
                                          &trans   &trans       &trans     &trans                           &trans  &trans      &trans   &trans
             >;
@@ -76,7 +76,7 @@ RAISE LAYER
 &kp LCTRL  &kp MINUS  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp C_VOL_UP                         &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &kp C_VOL_DN  &kp C_MUTE  &kp C_PP   &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
 
-                      &trans        &kp LGUI              &trans     &trans                                    &trans  &trans    &trans   &trans
+                                        &trans       &trans       &trans           &trans                                  &trans    &trans    &trans        &trans
             >;
         };
 
